@@ -125,6 +125,10 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Geolocator.Plugin\Geolocator.Plugin.csproj">
+      <Project>{a63fd844-f105-4cbe-ae97-f15b808c44fa}</Project>
+      <Name>Geolocator.Plugin</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeolocatorSample\GeolocatorSample.csproj">
       <Project>{02bb8331-934c-424b-a0ed-438e6f1c39d4}</Project>
       <Name>GeolocatorSample</Name>
@@ -132,13 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Plugin.Permissions">
-      <Version>4.0.2-beta</Version>
-    </PackageReference>
-    <PackageReference Include="Xam.Plugin.Geolocator">
-      <Version>4.5.3-beta</Version>
+      <Version>6.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.3.0.967583</Version>
+      <Version>5.0.0.2244</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

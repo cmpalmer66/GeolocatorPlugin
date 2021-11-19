@@ -169,6 +169,8 @@ namespace Plugin.Geolocator.Abstractions
 			get;
 			set;
 		}
+
+		public string Provider { get; set; }
 	}
 
 	/// <summary>

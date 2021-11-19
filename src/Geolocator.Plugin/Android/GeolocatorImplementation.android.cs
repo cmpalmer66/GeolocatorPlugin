@@ -39,7 +39,7 @@ namespace Plugin.Geolocator
 		}
 
 		string[] Providers => Manager.GetProviders(enabledOnly: false).ToArray();
-		string[] IgnoredProviders => new string[] { LocationManager.PassiveProvider, "local_database" };
+		string[] IgnoredProviders => new string[] { LocationManager.PassiveProvider, "local_database", "network", "fused" };
 
 		/// <summary>
 		/// Gets or sets the location manager providers to ignore when getting postition

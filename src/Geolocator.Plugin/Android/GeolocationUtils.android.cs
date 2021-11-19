@@ -77,11 +77,16 @@ namespace Plugin.Geolocator
 			p.HasSpeed = location.HasSpeed;
 			if (location.HasSpeed)
 				p.Speed = location.Speed;
+			else
+			{
+				p.Speed = double.NaN;
+			}
 
 			p.HasLatitudeLongitude = true;
 			p.Longitude = location.Longitude;
 			p.Latitude = location.Latitude;
 			p.Timestamp = location.GetTimestamp();
+			p.Provider = location.Provider;
 
 			if ((int)Android.OS.Build.VERSION.SdkInt >= 18)
 				p.IsFromMockProvider = location.IsFromMockProvider;
